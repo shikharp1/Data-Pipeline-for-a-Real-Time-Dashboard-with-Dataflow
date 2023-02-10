@@ -1,0 +1,23 @@
+
+->To list the active account name with this command:
+
+gcloud auth list
+
+->list the project ID with this command:s
+
+gcloud config list project
+
+The command-line tool
+
+1.In Cloud Shell (Cloud Shell icon), run the following command to create the taxirides dataset.
+
+bq --location=us-west1 mk taxirides
+
+2.Run this command to create the taxirides.realtime table (empty schema that you will stream into later).
+
+bq --location=us-west1 mk \
+--time_partitioning_field timestamp \
+--schema ride_id:string,point_idx:integer,latitude:float,longitude:float,\
+timestamp:timestamp,meter_reading:float,meter_increment:float,ride_status:string,\
+passenger_count:integer -t taxirides.realtime
+
