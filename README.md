@@ -2,6 +2,8 @@
 
 <h2>Overview</h2>
 I worked you own a fleet of New York City taxi cabs and are looking to monitor how well your business is doing in real-time. You build a streaming data pipeline to capture taxi revenue, passenger count, ride status, and much more, and then visualize the results in a management dashboard.
+<br><br>
+<img src="diagram.jpg" align="center">
 <h2>Objectives</h2>
 <h3>In this lab you learn how to:</h3>
 <br>
